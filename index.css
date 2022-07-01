@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 3em;
+    padding: 150px 30px;
+    height: 130px;
+}
+h2{ font-size: 2.5em;}
+h3{ font-size: 1.40em;}
+p{ font-size: 1.20em;}
+
+button{
+    font-size: 0.82em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.952);
+    color: aliceblue;
+    background-color: rgb(91, 0, 211);
+    
+}
+
+button:hover{
+    background-color: rgb(83, 9, 180);
+}
+
+.container{
+    max-width: 1040px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(221, 221, 221);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-size: bold;
+    color: rgb(83, 9, 180);
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom:25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color: rgb(83, 9, 180);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Screenshot_20220617-025150_Chrome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Mi-libro{
+    height: 90vh;
+}
+
+#Mi-libro .container{
+    text-align: center;
+    padding: 90px 12px;
+
+}
+
+#puedes-encontrarme{
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+#puedes-encontrarme h2{
+    font-size: 1.7em;
+}
+
+#puedes-encontrarme .container{
+    padding: 5px 12px;
+}
+
+#puedes-encontrarme p{
+    display: none;
+
+}
+
+#puedes-encontrarme .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 12px;
+    border-radius: 20px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Screenshot_20220617-025616_Twitch.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Screenshot_20220617-025418_YouTube.jpg");
+}
+
+.carta:nth-child(3){ background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Screenshot_20220617-025334_Discord.jpg");
+}
+
+@media(min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Mi-libro .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Mi-libro .texto{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #Mi-libro .img-container{
+        background-image: url("media/Screenshot_20220617-025539_Wattpad.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 100%;
+    }
+
+    #puedes-encontrarme .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #puedes-encontrarme p{
+        display: block;
+    }
+
+    #puedes-encontrame .carta{
+        padding: 50%;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+
+}
+
+footer{
+    text-align: right;
+}
